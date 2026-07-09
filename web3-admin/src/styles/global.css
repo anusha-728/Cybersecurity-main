@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body {
+  background-color: #0B1220;
+  color: #F8FAFC;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Force remove underlines from links that Tailwind missed */
+a {
+  text-decoration: none !important;
+}
+
+/* Custom Scrollbar for Dark Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1220; 
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563EB; 
+}
